@@ -3,5 +3,11 @@ interface ChildProps {
 }
 
 export const Child = ({ color }: ChildProps) => {
-  return <div>colors</div>;
+  return <div>{color}</div>;
 };
+
+export const ChildAsFC: React.FC<ChildProps> = ({ color }) => {
+  return <div>{color}</div>;
+};
+
+ChildAsFC.displayName = "dedede";
