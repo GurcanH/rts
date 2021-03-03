@@ -1,8 +1,8 @@
 import ReactDOM from "react-dom";
-import UserSearch from "./state/UserSearch";
+import EventComponent from "./events/EventComponent";
 
 const App = () => {
-  return <UserSearch />;
+  return <EventComponent />;
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));
